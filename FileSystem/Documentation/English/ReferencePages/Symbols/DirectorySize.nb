@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22951,        627]
+NotebookDataLength[     22954,        627]
 NotebookOptionsPosition[     15310,        461]
-NotebookOutlinePosition[     16100,        487]
-CellTagsIndexPosition[     16021,        482]
+NotebookOutlinePosition[     16103,        487]
+CellTagsIndexPosition[     16024,        482]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -459,8 +459,8 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{700, 497},
-WindowMargins->{{-5.5, Automatic}, {Automatic, 0}},
+WindowSize->{960, 478},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
 TaggingRules-><|"Paclet" -> "PeterBurbery/FileSystem"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
@@ -481,7 +481,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 15827, 475}
+ {"ExtendedExamples", 15830, 475}
  }
 *)
 (*NotebookFileOutline
