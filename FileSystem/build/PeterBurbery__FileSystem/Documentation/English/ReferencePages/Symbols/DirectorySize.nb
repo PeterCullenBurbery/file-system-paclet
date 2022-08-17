@@ -1,0 +1,536 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18181,        527]
+NotebookOptionsPosition[     12619,        409]
+NotebookOutlinePosition[     14794,        463]
+CellTagsIndexPosition[     14709,        458]
+WindowTitle->DirectorySize
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ FILE SYSTEM SYMBOL", "PacletNameCell",
+           TextAlignment->Center], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]]]
+        }]],
+        StripOnInput->
+         False], {"\<\"PeterBurbery/FileSystem/ref/DirectorySize\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["PeterBurbery/FileSystem/ref/DirectorySize"]}, Visible -> 
+            False]]; SelectionMove[
+         DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/PeterBurbery/\
+FileSystem/ref/DirectorySize.html"], StandardForm]], "Input", 
+              TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[(If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$124704], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "PeterBurbery/FileSystem/ref/DirectorySize") <> ".html"], 
+           None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0}]], "AnchorBar",
+     CacheGraphics->False]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["PeterBurbery`FileSystem`", "ContextNameCell"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell["DirectorySize", "ObjectName"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]]],
+     Cell[BoxData[""], "ObjectNameTranslation"]
+    }]], "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["DirectorySize"]], 
+         "paclet:PeterBurberyFile/ref/DirectorySize", 
+         "PeterBurberyFile Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro"],
+     "\[LineSeparator]returns the byte count for the current directory as a \
+quantity."
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["DirectorySize"]], 
+         "paclet:PeterBurberyFile/ref/DirectorySize", 
+         "PeterBurberyFile Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["dir", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro"],
+     "\[LineSeparator]returns the byte count for ",
+     Cell[BoxData[
+      StyleBox["dir", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro"],
+     " as a quantity."
+    }]]}
+  }]], "Usage",
+ CellID->14748680]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]]],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]]],
+   "Details and Options"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->633841615],
+
+Cell["\<\
+This is a function created by Arnoud Buzing on the function repository at \
+https://resources.wolframcloud.com/FunctionRepository/resources/DirectorySize.\
+\>", "Notes",
+ CellID->407067353]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]]],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->728719130],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`FileSystem`\>\"", "]"}]], "Input", \
+"ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->115131329],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{
+    13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]]],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]]],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->447243845],
+
+Cell["Find the size of the current directory:", "ExampleText",
+ CellID->329149677],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DirectorySize", "[", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[1]:=",
+ CellID->255692020],
+
+Cell[BoxData[
+ TemplateBox[{"6254912515", "\"B\"", "bytes", "\"Bytes\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[1]=",
+ CellID->354328569]
+}, Open  ]],
+
+Cell["Find the size of the user base directory:", "ExampleText",
+ CellID->337731202],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DirectorySize", "[", "$UserBaseDirectory", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[2]:=",
+ CellID->307464161],
+
+Cell[BoxData[
+ TemplateBox[{"318859195", "\"B\"", "bytes", "\"Bytes\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->561403147]
+}, Open  ]],
+
+Cell["\<\
+Express the size in trits, which is like a bit but with three values instead \
+of two:\
+\>", "ExampleText",
+ CellID->162035474],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"DirectorySize", "[", "$UserBaseDirectory", "]"}], ",", 
+   "\"\<Trits\>\""}], "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[3]:=",
+ CellID->280553070],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{"2550873560", " ", 
+      RowBox[{"Log", "[", "2", "]"}]}], 
+    RowBox[{"Log", "[", "3", "]"}]], "\"trits\"", "trits", "\"Trits\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->814154534]
+}, Open  ]],
+
+Cell["To find the numerical value of this expression, use N:", "ExampleText",
+ CellID->50996412],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"UnitConvert", "[", 
+   RowBox[{
+    RowBox[{"DirectorySize", "[", "$UserBaseDirectory", "]"}], ",", 
+    "\"\<Trits\>\""}], "]"}], "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[4]:=",
+ CellID->150724976],
+
+Cell[BoxData[
+ TemplateBox[{"1.609422026602746`*^9", "\"trits\"", "trits", "\"Trits\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->35976815]
+}, Open  ]],
+
+Cell["\<\
+Use ceiling to ensure that there are no bits that do not fit into a trit:\
+\>", "ExampleText",
+ CellID->792375939],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ceiling", "[", 
+  RowBox[{"N", "[", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{
+     RowBox[{"DirectorySize", "[", "$UserBaseDirectory", "]"}], ",", 
+     "\"\<Trits\>\""}], "]"}], "]"}], "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[5]:=",
+ CellID->363186957],
+
+Cell[BoxData[
+ TemplateBox[{"1609422027", "\"trits\"", "trits", "\"Trits\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->45990020]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 497},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"DirectorySize",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2022, 8, 17, 9, 7, 10.2249681}", 
+    "history" -> {"", "", "", ""}, "context" -> "PeterBurbery`FileSystem`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ File System Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/FileSystem", "status" -> "None", "summary" -> 
+    "DirectorySize[] returns the byte count for the current directory as a \
+quantity. DirectorySize[dir] returns the byte count for dir as a quantity.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "DirectorySize", 
+    "titlemodifier" -> "", "windowtitle" -> "DirectorySize", "type" -> 
+    "Symbol", "uri" -> "PeterBurbery/FileSystem/ref/DirectorySize"}},
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[7023, 208, 1194, 35, 70, "PrimaryExamplesSection",ExpressionUUID->"954ad20e-3ef7-4d93-9ea7-003aaa2efe1b",
+   CellTags->"PrimaryExamplesSection",
+   CellID->728719130]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 14510, 451}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[585, 21, 3012, 75, 70, "AnchorBarGrid",ExpressionUUID->"c62ccf8e-5cc7-4afd-b7e4-07c084136f1f",
+ CellID->1],
+Cell[3600, 98, 51, 0, 70, "ContextNameCell",ExpressionUUID->"548a3e16-eec4-47a9-bde5-db9a600631c1"],
+Cell[CellGroupData[{
+Cell[3676, 102, 248, 8, 70, "ObjectNameGrid",ExpressionUUID->"58bd1419-adaf-473a-91f6-5d963f671122"],
+Cell[3927, 112, 1097, 34, 70, "Usage",ExpressionUUID->"fe51de57-d406-446b-b1df-af2f2e656eff",
+ CellID->14748680]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5061, 151, 1633, 45, 70, "NotesSection",ExpressionUUID->"26e13dd7-a73b-440f-b4eb-a6f0004a37a2",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->633841615],
+Cell[6697, 198, 199, 4, 70, "Notes",ExpressionUUID->"3bb54b93-631c-4aa3-952e-efb7d6a5b7f6",
+ CellID->407067353]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[7023, 208, 1194, 35, 70, "PrimaryExamplesSection",ExpressionUUID->"954ad20e-3ef7-4d93-9ea7-003aaa2efe1b",
+ CellTags->"PrimaryExamplesSection",
+ CellID->728719130],
+Cell[8220, 245, 159, 4, 70, "Input",ExpressionUUID->"85bf4717-6fd8-4aab-b677-72ff11ed2c54",
+ CellID->115131329],
+Cell[CellGroupData[{
+Cell[8404, 253, 1195, 35, 70, "ExampleSection",ExpressionUUID->"e2bd1549-1381-473f-93e7-935e2b498e60",
+ CellID->447243845],
+Cell[9602, 290, 82, 1, 70, "ExampleText",ExpressionUUID->"cc33257c-cac9-49f1-bdea-919c9894d59d",
+ CellID->329149677],
+Cell[CellGroupData[{
+Cell[9709, 295, 152, 4, 70, "Input",ExpressionUUID->"e071058a-a5b8-487f-8689-066465ffc55e",
+ CellID->255692020],
+Cell[9864, 301, 142, 4, 70, "Output",ExpressionUUID->"02e8f3b8-4cd4-44bb-a555-e73e566f8bdf",
+ CellID->354328569]
+}, Open  ]],
+Cell[10021, 308, 84, 1, 70, "ExampleText",ExpressionUUID->"e1ee01d7-1f87-400f-b68f-b40f15ed0381",
+ CellID->337731202],
+Cell[CellGroupData[{
+Cell[10130, 313, 174, 4, 70, "Input",ExpressionUUID->"23273c2b-a944-40e0-a3f3-3e737f88e1ef",
+ CellID->307464161],
+Cell[10307, 319, 141, 4, 70, "Output",ExpressionUUID->"e529a2b0-3c6d-4999-9aef-49a58d9587ac",
+ CellID->561403147]
+}, Open  ]],
+Cell[10463, 326, 137, 4, 70, "ExampleText",ExpressionUUID->"23c37d98-db92-4331-b8c9-2a22afeef006",
+ CellID->162035474],
+Cell[CellGroupData[{
+Cell[10625, 334, 252, 7, 70, "Input",ExpressionUUID->"8f4ed3d4-59d7-4f44-a3d8-f45d10916856",
+ CellID->280553070],
+Cell[10880, 343, 259, 8, 70, "Output",ExpressionUUID->"115a3d5d-7373-47d3-9502-c75d06aacec6",
+ CellID->814154534]
+}, Open  ]],
+Cell[11154, 354, 96, 1, 70, "ExampleText",ExpressionUUID->"90c07d3e-c2fd-45ea-8a06-f93900196ffd",
+ CellID->50996412],
+Cell[CellGroupData[{
+Cell[11275, 359, 283, 8, 70, "Input",ExpressionUUID->"ac0cd54b-6d1a-489a-bd13-71709c9e74b1",
+ CellID->150724976],
+Cell[11561, 369, 156, 4, 70, "Output",ExpressionUUID->"00e47bed-56db-4f4c-9f65-c189a9762e35",
+ CellID->35976815]
+}, Open  ]],
+Cell[11732, 376, 124, 3, 70, "ExampleText",ExpressionUUID->"f5170af3-6010-4893-a830-9fd9750b4c10",
+ CellID->792375939],
+Cell[CellGroupData[{
+Cell[11881, 383, 321, 9, 70, "Input",ExpressionUUID->"6a274c3e-c223-493d-9dde-e1246780dd7b",
+ CellID->363186957],
+Cell[12205, 394, 145, 4, 70, "Output",ExpressionUUID->"2a35f229-3eff-426c-a798-812478a61cf5",
+ CellID->45990020]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[12592, 407, 23, 0, 70, "FooterCell",ExpressionUUID->"f7492f80-defa-4b80-b682-00dfdba88a0d"]
+}
+]
+*)
+
+(* End of internal cache information *)
