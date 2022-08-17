@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.3.0",
+    "Version" -> "1.6.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {
@@ -19,7 +19,10 @@ PacletObject[
             "FileSystem.wl"
           }
         },
-        "Symbols" -> {"PeterBurbery`FileSystem`DirectorySize"}
+        "Symbols" -> {
+          "PeterBurbery`FileSystem`BrowserOpen",
+          "PeterBurbery`FileSystem`DirectorySize"
+        }
       },
       {"Documentation", "Language" -> "English"}
     }

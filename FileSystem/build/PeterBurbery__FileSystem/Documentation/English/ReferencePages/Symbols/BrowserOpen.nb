@@ -1,0 +1,713 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     24191,        704]
+NotebookOptionsPosition[     16448,        539]
+NotebookOutlinePosition[     18524,        592]
+CellTagsIndexPosition[     18439,        587]
+WindowTitle->BrowserOpen
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ FILE SYSTEM SYMBOL", "PacletNameCell",
+           TextAlignment->Center], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]]]
+        }]],
+        StripOnInput->
+         False], {"\<\"PeterBurbery/FileSystem/ref/BrowserOpen\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["PeterBurbery/FileSystem/ref/BrowserOpen"]}, Visible -> 
+            False]]; SelectionMove[
+         DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/PeterBurbery/\
+FileSystem/ref/BrowserOpen.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[(If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$146888], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "PeterBurbery/FileSystem/ref/BrowserOpen") <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0}]], "AnchorBar",
+     CacheGraphics->False]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["PeterBurbery`FileSystem`", "ContextNameCell"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell["BrowserOpen", "ObjectName"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]]],
+     Cell[BoxData[""], "ObjectNameTranslation"]
+    }]], "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["BrowserOpen"]], "paclet:PeterBurberyFile/ref/BrowserOpen",
+          "PeterBurberyFile Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["url", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro"],
+     "\[LineSeparator]opens ",
+     Cell[BoxData[
+      StyleBox["url", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro"],
+     " in your default web browser."
+    }]]}
+  }]], "Usage",
+ CellID->13910065]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]]],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]]],
+   "Details and Options"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->180880850],
+
+Cell[TextData[{
+ Cell[BoxData["BrowserOpen"], "InlineFormula",
+  FontFamily->"Source Sans Pro"],
+ " is only supported with the Windows operating system."
+}], "Notes",
+ CellID->128051976]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]]],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->507639790],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`FileSystem`\>\"", "]"}]], "Input", \
+"ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->286869355],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{
+    13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]]],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]]],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->28158458],
+
+Cell["\<\
+Open Google's homepage with the URL https://www.google.com with the default \
+web browser on your computer:\
+\>", "ExampleText",
+ CellID->180043935],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<https://www.google.com\>\"", "]"}]], "Input",\
+
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[1]:=",
+ CellID->216389070],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[1]=",
+ CellID->175587022]
+}, Open  ]],
+
+Cell["Open Wikipedia:", "ExampleText",
+ CellID->850261903],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<https://www.wikipedia.org\>\"", 
+  "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[2]:=",
+ CellID->303525132],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->376178813]
+}, Open  ]],
+
+Cell["Open the main page of the English Wikipedia:", "ExampleText",
+ CellID->219419111],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", 
+  "\"\<https://en.wikipedia.org/wiki/Main_Page\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[3]:=",
+ CellID->518193035],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->559831277]
+}, Open  ]],
+
+Cell["Open the home page of YouTube:", "ExampleText",
+ CellID->69118048],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<https://www.youtube.com\>\"", 
+  "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[4]:=",
+ CellID->240646950],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->590471005]
+}, Open  ]],
+
+Cell["Open the home page without entering https:", "ExampleText",
+ CellID->346640786],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<www.youtube.com\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[5]:=",
+ CellID->224131385],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->742728078]
+}, Open  ]],
+
+Cell["Open the documentation for Mathematica:", "ExampleText",
+ CellID->29241081],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", 
+  "\"\<https://reference.wolfram.com/language/\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[6]:=",
+ CellID->89755345],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->195768456]
+}, Open  ]],
+
+Cell["Open Wikimedia Commons:", "ExampleText",
+ CellID->143930080],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", 
+  "\"\<https://commons.wikimedia.org/wiki/Main_Page\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[7]:=",
+ CellID->1033621484],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->525895243]
+}, Open  ]],
+
+Cell["Open Wikidata:", "ExampleText",
+ CellID->353029339],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", 
+  "\"\<https://www.wikidata.org/wiki/Wikidata:Main_Page\>\"", "]"}]], "Input",\
+
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[8]:=",
+ CellID->529280754],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->22878901]
+}, Open  ]],
+
+Cell["Open the home page of Wikisource:", "ExampleText",
+ CellID->32098971],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", 
+  "\"\<https://en.wikisource.org/wiki/Main_Page\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[9]:=",
+ CellID->485640812],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[9]=",
+ CellID->121561721]
+}, Open  ]],
+
+Cell["Go to the online encyclopedia of integer sequences, OEIS:", \
+"ExampleText",
+ CellID->15096087],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<https://oeis.org/\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[10]:=",
+ CellID->173878239],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->673843662]
+}, Open  ]],
+
+Cell["Open Google My Maps to create a map:", "ExampleText",
+ CellID->247530947],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BrowserOpen", "[", "\"\<https://www.google.com/maps/d/\>\"", 
+  "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`FileSystem`"],
+ CellLabel->"In[11]:=",
+ CellID->184399262],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"ExitCode\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"StandardOutput\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
+   RowBox[{"\<\"StandardError\"\>", "\[Rule]", "\<\"\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->921834123]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 497},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"BrowserOpen",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2022, 8, 17, 9, 59, 3.6392361}", 
+    "history" -> {"", "", "", ""}, "context" -> "PeterBurbery`FileSystem`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ File System Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/FileSystem", "status" -> "None", "summary" -> 
+    "BrowserOpen[url] opens url in your default web browser.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "BrowserOpen", 
+    "titlemodifier" -> "", "windowtitle" -> "BrowserOpen", "type" -> "Symbol",
+     "uri" -> "PeterBurbery/FileSystem/ref/BrowserOpen"}},
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6505, 193, 1194, 35, 70, "PrimaryExamplesSection",ExpressionUUID->"0e5f2f01-dc33-46ba-a98b-74c3ab2431e6",
+   CellTags->"PrimaryExamplesSection",
+   CellID->507639790]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 18240, 580}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 2992, 74, 70, "AnchorBarGrid",ExpressionUUID->"8de9f026-67ff-4b46-9049-03ed99c12a72",
+ CellID->1],
+Cell[3578, 97, 51, 0, 70, "ContextNameCell",ExpressionUUID->"efe80a23-8455-472e-86e5-6e09db74052f"],
+Cell[CellGroupData[{
+Cell[3654, 101, 246, 8, 70, "ObjectNameGrid",ExpressionUUID->"aca00024-e47b-40f5-9f1d-9daf0cf7aa47"],
+Cell[3903, 111, 616, 19, 70, "Usage",ExpressionUUID->"6130e599-affd-4743-abf1-9346346dd8e2",
+ CellID->13910065]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4556, 135, 1633, 45, 70, "NotesSection",ExpressionUUID->"e7c93dd6-3127-4009-a333-cbcbe308f5e4",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->180880850],
+Cell[6192, 182, 186, 5, 70, "Notes",ExpressionUUID->"1df6df46-fd2f-4afa-94a0-62d56704dab5",
+ CellID->128051976]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[6505, 193, 1194, 35, 70, "PrimaryExamplesSection",ExpressionUUID->"0e5f2f01-dc33-46ba-a98b-74c3ab2431e6",
+ CellTags->"PrimaryExamplesSection",
+ CellID->507639790],
+Cell[7702, 230, 159, 4, 70, "Input",ExpressionUUID->"19ae0058-8486-4310-87c7-6c8890d5b8bd",
+ CellID->286869355],
+Cell[CellGroupData[{
+Cell[7886, 238, 1194, 35, 70, "ExampleSection",ExpressionUUID->"6548f1b5-e448-46e2-89ea-f42cf680107d",
+ CellID->28158458],
+Cell[9083, 275, 158, 4, 70, "ExampleText",ExpressionUUID->"04f21176-9521-45cf-ba94-855540d00d74",
+ CellID->180043935],
+Cell[CellGroupData[{
+Cell[9266, 283, 186, 5, 70, "Input",ExpressionUUID->"d332cdd0-be86-4032-b84f-6b98c5dbca04",
+ CellID->216389070],
+Cell[9455, 290, 324, 8, 70, "Output",ExpressionUUID->"1a6cb983-fa37-40a5-b275-71bc1e452b89",
+ CellID->175587022]
+}, Open  ]],
+Cell[9794, 301, 58, 1, 70, "ExampleText",ExpressionUUID->"53cec7f0-2f55-4d3e-9b10-a9ed6403a00e",
+ CellID->850261903],
+Cell[CellGroupData[{
+Cell[9877, 306, 190, 5, 70, "Input",ExpressionUUID->"f593cbdf-77e4-47a1-be03-3a2d74662a48",
+ CellID->303525132],
+Cell[10070, 313, 324, 8, 70, "Output",ExpressionUUID->"14bebe6b-2bbc-45be-8036-b0d35fa817cf",
+ CellID->376178813]
+}, Open  ]],
+Cell[10409, 324, 87, 1, 70, "ExampleText",ExpressionUUID->"9109b7b9-330b-4035-b0a9-bdf15a61df8f",
+ CellID->219419111],
+Cell[CellGroupData[{
+Cell[10521, 329, 204, 5, 70, "Input",ExpressionUUID->"9c584c03-e608-472e-b9c2-ff0e1c2e37a9",
+ CellID->518193035],
+Cell[10728, 336, 324, 8, 70, "Output",ExpressionUUID->"61417698-3865-43d3-b412-d711de728424",
+ CellID->559831277]
+}, Open  ]],
+Cell[11067, 347, 72, 1, 70, "ExampleText",ExpressionUUID->"ed295afd-c5a7-46bd-be6a-f803dbc5a321",
+ CellID->69118048],
+Cell[CellGroupData[{
+Cell[11164, 352, 188, 5, 70, "Input",ExpressionUUID->"d7766663-2b3a-4f87-ae98-ef4428ebf966",
+ CellID->240646950],
+Cell[11355, 359, 324, 8, 70, "Output",ExpressionUUID->"d0e621b3-73cb-4d7d-bfd3-fb2d1c9a7a7c",
+ CellID->590471005]
+}, Open  ]],
+Cell[11694, 370, 85, 1, 70, "ExampleText",ExpressionUUID->"04ab3270-3bbd-41a4-8d89-9eacfcfc5f99",
+ CellID->346640786],
+Cell[CellGroupData[{
+Cell[11804, 375, 177, 4, 70, "Input",ExpressionUUID->"a8bf45c5-0c9b-4d5c-b853-df778c9ff048",
+ CellID->224131385],
+Cell[11984, 381, 324, 8, 70, "Output",ExpressionUUID->"4a2b7cad-7b49-4ecb-a51c-b6313aea0990",
+ CellID->742728078]
+}, Open  ]],
+Cell[12323, 392, 81, 1, 70, "ExampleText",ExpressionUUID->"bd171d13-a075-41a4-a85f-259bfa307935",
+ CellID->29241081],
+Cell[CellGroupData[{
+Cell[12429, 397, 203, 5, 70, "Input",ExpressionUUID->"9071b38a-71e3-4b53-8b5a-438e4a2aa8eb",
+ CellID->89755345],
+Cell[12635, 404, 324, 8, 70, "Output",ExpressionUUID->"b88c039f-e94c-4850-9e8c-7a25d5314c11",
+ CellID->195768456]
+}, Open  ]],
+Cell[12974, 415, 66, 1, 70, "ExampleText",ExpressionUUID->"750fa9a7-6fac-4b7e-878d-e377139fa5d1",
+ CellID->143930080],
+Cell[CellGroupData[{
+Cell[13065, 420, 210, 5, 70, "Input",ExpressionUUID->"5cecc566-0934-42af-ad9e-d989f1d16c2e",
+ CellID->1033621484],
+Cell[13278, 427, 324, 8, 70, "Output",ExpressionUUID->"1a23a9d1-7b21-4495-ace5-ffea0c1586ac",
+ CellID->525895243]
+}, Open  ]],
+Cell[13617, 438, 57, 1, 70, "ExampleText",ExpressionUUID->"0ac09e76-d9f7-4961-ad45-1c13ae8cb89c",
+ CellID->353029339],
+Cell[CellGroupData[{
+Cell[13699, 443, 215, 6, 70, "Input",ExpressionUUID->"be39450b-a858-458b-a5bb-c589ae308b23",
+ CellID->529280754],
+Cell[13917, 451, 323, 8, 70, "Output",ExpressionUUID->"b4295773-7d3f-4adc-bb6b-f0df7a733c5a",
+ CellID->22878901]
+}, Open  ]],
+Cell[14255, 462, 75, 1, 70, "ExampleText",ExpressionUUID->"bf69963b-042c-4e9e-9e48-c94e20be0d76",
+ CellID->32098971],
+Cell[CellGroupData[{
+Cell[14355, 467, 205, 5, 70, "Input",ExpressionUUID->"46642e94-4e67-413a-95b3-7645864accc2",
+ CellID->485640812],
+Cell[14563, 474, 324, 8, 70, "Output",ExpressionUUID->"488673fe-bfe5-4012-8772-3fcc34e3bd0b",
+ CellID->121561721]
+}, Open  ]],
+Cell[14902, 485, 101, 2, 70, "ExampleText",ExpressionUUID->"a55934c5-c605-4452-947c-9d23c8150560",
+ CellID->15096087],
+Cell[CellGroupData[{
+Cell[15028, 491, 180, 4, 70, "Input",ExpressionUUID->"b4fbf378-a66c-489e-a30b-8c675e287ba2",
+ CellID->173878239],
+Cell[15211, 497, 325, 8, 70, "Output",ExpressionUUID->"ce670ec7-e632-4695-9a3a-ac9609617a5e",
+ CellID->673843662]
+}, Open  ]],
+Cell[15551, 508, 79, 1, 70, "ExampleText",ExpressionUUID->"d0a4b5c2-d18b-4bda-b5ea-1a896ab9fb2b",
+ CellID->247530947],
+Cell[CellGroupData[{
+Cell[15655, 513, 196, 5, 70, "Input",ExpressionUUID->"ef820199-a16e-497f-a1c8-51d028f1b535",
+ CellID->184399262],
+Cell[15854, 520, 325, 8, 70, "Output",ExpressionUUID->"f9029e0e-278c-41c6-a3fe-9d1e2cbf8918",
+ CellID->921834123]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[16421, 537, 23, 0, 70, "FooterCell",ExpressionUUID->"85fa92d6-8b83-4914-a262-4249af8a1c65"]
+}
+]
+*)
+
+(* End of internal cache information *)
