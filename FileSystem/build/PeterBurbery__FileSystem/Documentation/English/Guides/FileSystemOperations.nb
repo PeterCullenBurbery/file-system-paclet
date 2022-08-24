@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7278,        200]
-NotebookOptionsPosition[      5138,        152]
-NotebookOutlinePosition[      6709,        191]
-CellTagsIndexPosition[      6666,        188]
+NotebookDataLength[      7899,        219]
+NotebookOptionsPosition[      5636,        169]
+NotebookOutlinePosition[      7212,        208]
+CellTagsIndexPosition[      7169,        205]
 WindowTitle->File System Operations
 WindowFrame->Normal*)
 
@@ -51,8 +51,10 @@ Cell[BoxData[GridBox[{
             ImageSize->20,
             PlotRange->{{-3, 4}, {-1, 1}}]]]
          }]],
-         StripOnInput->False], {"\<\"DirectorySize\"\>":>
+         StripOnInput->False], {"\<\"BrowserOpen\"\>":>
         Documentation`HelpLookup[
+        "paclet:PeterBurbery/FileSystem/ref/BrowserOpen"], "\<\"DirectorySize\
+\"\>":>Documentation`HelpLookup[
         "paclet:PeterBurbery/FileSystem/ref/DirectorySize"]},
         Appearance->None,
         MenuAppearance->Automatic,
@@ -103,7 +105,7 @@ FileSystem/guide/FileSystemOperations.html"], StandardForm]], "Input",
          Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
           NotebookLocate[{
             URL[(If[
-                TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$26913], 
+                TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$209417], 
                 "http://reference.wolfram.com/system-modeler/", 
                 "http://reference.wolfram.com/language/"] <> 
               "PeterBurbery/FileSystem/guide/FileSystemOperations") <> 
@@ -145,14 +147,29 @@ Cell[TextData[{
  StyleBox["\[LongDash]", "GuideEmDash"],
  " Find the total size of a directory"
 }], "GuideText",
- CellID->130449558]
+ CellID->130449558],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["BrowserOpen"]], 
+    "paclet:PeterBurbery/FileSystem/ref/BrowserOpen", 
+    "PeterBurbery Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " Open a web browser with the given URL"
+}], "GuideText",
+ CellID->205013771]
 }, Open  ]],
 
 Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
-WindowSize->{900, 497},
+WindowSize->{900., 604.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 WindowTitle->"File System Operations",
 TaggingRules->{
@@ -163,14 +180,14 @@ TaggingRules->{
   "NewStyles" -> True, "CitationPopupData" -> {"", ""}, "ShowCitation" -> 
   False, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2022, 8, 17, 9, 41, 42.1620927}", 
+   "built" -> "{2022, 8, 24, 18, 43, 38.7957587}", 
     "history" -> {"", "", "", ""}, "context" -> "PeterBurbery`FileSystem`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Peter Burbery/ File System Guide", "language" -> "en", "paclet" -> 
     "PeterBurbery/FileSystem", "status" -> "None", "summary" -> 
     "Manipulate files and directories.", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$26880, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$209387, "title" -> 
     "File System Operations", "titlemodifier" -> "", "windowtitle" -> 
     "File System Operations", "type" -> "Guide", "uri" -> 
     "PeterBurbery/FileSystem/guide/FileSystemOperations"}},
@@ -190,18 +207,20 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[594, 21, 3903, 101, 70, "AnchorBarGrid",ExpressionUUID->"e773f348-9b6d-4bdd-b9c5-6804f514a810",
+Cell[594, 21, 4014, 103, 70, "AnchorBarGrid",ExpressionUUID->"55d967fd-1498-4c53-b39c-0922e3921bbb",
  CellID->1],
 Cell[CellGroupData[{
-Cell[4522, 126, 64, 1, 70, "GuideTitle",ExpressionUUID->"73ed3c83-2490-4854-99e8-db681831978d",
+Cell[4633, 128, 64, 1, 70, "GuideTitle",ExpressionUUID->"598f1089-ec49-4344-82c8-e2e90d0c917d",
  CellID->161006917],
-Cell[4589, 129, 78, 1, 70, "GuideAbstract",ExpressionUUID->"0c9ced61-8b25-4f3c-b78e-31593d353ab5",
+Cell[4700, 131, 78, 1, 70, "GuideAbstract",ExpressionUUID->"19b9475d-3c8b-4cb8-ade4-5b128a26b53a",
  CellID->296230515],
-Cell[4670, 132, 38, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"60439726-e6b0-4e6f-a87c-15d34d354f95"],
-Cell[4711, 134, 385, 13, 70, "GuideText",ExpressionUUID->"2ff5b897-5eb1-4b79-ab85-ab42a3fa7d08",
- CellID->130449558]
+Cell[4781, 134, 38, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"4a44170b-4a36-4f7b-aac1-0d8f4a683ec4"],
+Cell[4822, 136, 385, 13, 70, "GuideText",ExpressionUUID->"46275dc1-4730-48b8-bd90-cabf1c8a9aa7",
+ CellID->130449558],
+Cell[5210, 151, 384, 13, 70, "GuideText",ExpressionUUID->"cd2fd133-2545-4c37-ad3e-dcce487ffe5c",
+ CellID->205013771]
 }, Open  ]],
-Cell[5111, 150, 23, 0, 70, "FooterCell",ExpressionUUID->"86c3a42b-5577-480a-b831-38fb9c9b6edf"]
+Cell[5609, 167, 23, 0, 70, "FooterCell",ExpressionUUID->"a3236b4d-0a06-45b4-bcfe-0a1f23ce7d67"]
 }
 ]
 *)
