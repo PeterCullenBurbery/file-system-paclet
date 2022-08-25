@@ -9,4 +9,8 @@
  "English\\ReferencePages\\Symbols\\BrowserOpen.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[4.3705347, "Seconds"]|>], 
-   "FileHash" -> "TJGIT1gNTL5tTHUwHy3la6vzAIf2i375KJjQDo+vU24="|>|>
+   "FileHash" -> "TJGIT1gNTL5tTHUwHy3la6vzAIf2i375KJjQDo+vU24="|>, 
+ "English\\ReferencePages\\Symbols\\ImageRead.nb" -> 
+  <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[2.039145, "Seconds"]|>], 
+   "FileHash" -> "sRKH5UxXNA/R4tGsN7RQ4pv6PjTvvMFIYPCVhiEElVc="|>|>

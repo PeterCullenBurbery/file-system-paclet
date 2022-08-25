@@ -56,5 +56,19 @@
             "690bc0c099b1cf3099a84493f7d4b05bbd25878f03d6ec81b27538cd7de86a77"
                 
         |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\ImageRead.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "93e13ceef8237df9b61879bc1b71198d43a7e79650435a6c2861a5fa08b15efd"
+                
+        |>
     }
 |>

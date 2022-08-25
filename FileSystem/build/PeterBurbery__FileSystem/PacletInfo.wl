@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.9.0",
+    "Version" -> "1.10.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {
@@ -21,7 +21,8 @@ PacletObject[
         },
         "Symbols" -> {
           "PeterBurbery`FileSystem`BrowserOpen",
-          "PeterBurbery`FileSystem`DirectorySize"
+          "PeterBurbery`FileSystem`DirectorySize",
+          "PeterBurbery`FileSystem`ImageRead"
         }
       },
       {"Documentation", "Language" -> "English"}
